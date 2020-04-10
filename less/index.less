@@ -1,7 +1,10 @@
 /*setting variables*/
-@primary-color: hsl(257, 7%, 63%);
-
-
+@neutral-color: #FFF;
+@primary-color: #EBECF0;
+@secondary-color: #D3D3D3;
+@tetiary-color: #BEBEBE;
+@other-color: #949494;
+@button-color: #808080;
 
 
 * {
@@ -15,11 +18,17 @@
     margin: 0 auto;
 }
 
+.container2 {
+    margin: auto;
+    padding: 3rem;
+}
+
 /*navbar*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin-top: 1rem;
     /*since i didn't give a particular font or px it will be 16px hence 2rem =32px;*/
 }
 
@@ -38,8 +47,9 @@
 /*showcase section*/
 
 .main-info {
-    background-color: @primary-color ;
-    padding: 30px;
+    background-color: @secondary-color ;
+
+
 }
 
 .image {
@@ -51,27 +61,48 @@ h2 {
     font-size: 2.5rem;
 }
 
-.info-bio p {
-    font-size: 0px;
+.info-bio {
+    font-size: 1.2rem;
+    padding: 0.5rem
 }
 
-.info-description {}
+/*button*/
 
 .btn {
-    padding: 0 2.3rem;
-    border-radius: 200px;
-    background-color: palevioletred;
-
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: @neutral-color;
+    background-color: @button-color;
 }
 
-/*using mixing for the skills section
+/*using mixing for the profile section
 Skills section*/
 .skills-container {
     .right-nav ();
 
 }
 
-/*Work history*/
+.Profile_Skill {
+    display: flex;
+}
+
+.Profile_skill_section {
+    padding: 2rem 0;
+}
+
+.Profile {
+    padding-right: 0.6rem;
+    line-height: 1.8rem;
+    ;
+}
+
+/* Work history */
+.Work-History-section {
+    padding-bottom: 2rem;
+}
+
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -80,13 +111,25 @@ table {
 
 td,
 th {
-    border: 1px solid black;
+    border: 1px solid @neutral-color;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: black;
+    background-color: @tetiary-color;
 }
 
-/*nesting*/
+/* Footer section */
+.copyright {
+    color: @neutral-color;
+    text-align: center;
+
+}
+
+.copyright-section {
+    background-color: @button-color ;
+    padding: 2rem;
+
+
+}

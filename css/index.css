@@ -8,11 +8,15 @@
   width: 85%;
   margin: 0 auto;
 }
+.container2 {
+  margin: auto;
+  padding: 3rem;
+}
 /*navbar*/
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 2rem;
+  margin-top: 1rem;
   /*since i didn't give a particular font or px it will be 16px hence 2rem =32px;*/
 }
 .right-nav {
@@ -26,8 +30,7 @@
 }
 /*showcase section*/
 .main-info {
-  background-color: hsl(257, 7%, 63%);
-  padding: 30px;
+  background-color: #D3D3D3;
 }
 .image {
   max-width: 100%;
@@ -36,20 +39,37 @@
 h2 {
   font-size: 2.5rem;
 }
-.info-bio p {
-  font-size: 0px;
+.info-bio {
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
+/*button*/
 .btn {
-  padding: 0 2.3rem;
-  border-radius: 200px;
-  background-color: palevioletred;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: #FFF;
+  background-color: #808080;
 }
-/*using mixing for the skills section
+/*using mixing for the profile section
 Skills section*/
 .skills-container {
   display: flex;
 }
-/*Work history*/
+.Profile_Skill {
+  display: flex;
+}
+.Profile_skill_section {
+  padding: 2rem 0;
+}
+.Profile {
+  padding-right: 0.6rem;
+  line-height: 1.8rem;
+}
+/* Work history */
+.Work-History-section {
+  padding-bottom: 2rem;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -57,11 +77,19 @@ table {
 }
 td,
 th {
-  border: 1px solid black;
+  border: 1px solid #FFF;
   text-align: left;
   padding: 8px;
 }
 tr:nth-child(even) {
-  background-color: black;
+  background-color: #BEBEBE;
 }
-/*nesting*/
+/* Footer section */
+.copyright {
+  color: #FFF;
+  text-align: center;
+}
+.copyright-section {
+  background-color: #808080;
+  padding: 2rem;
+}
